@@ -23,9 +23,3 @@ class CommentSerializers(serializers.ModelSerializer):
     class Meta:
         fields = '__all__'
         model = Comment
-
-
-class UserSerializers(serializers.ModelSerializer):
-    class Meta:
-        fields = '__all__'
-        model = User

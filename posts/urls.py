@@ -3,10 +3,9 @@ from django.urls import include, path
 from rest_framework.authtoken import views
 from rest_framework.routers import DefaultRouter
 
-from .views import PostViewSet, CommentViewSet, UserViewSet
+from .views import PostViewSet, CommentViewSet
 
 router = DefaultRouter()
-router.register('api/v1/users', UserViewSet)
 router.register('api/v1/posts', PostViewSet)
 router.register(r'api/v1/posts/(?P<id>\d+)/comments', CommentViewSet)
 
